@@ -11,8 +11,14 @@
     --clr-dark: #303030;
     --clr-accent: #FAD900;
     --clr-extra: #058465;
-    --clr-hireBtn: #172E59;
+    --clr-additional: #172E59;
 
+    --fs-h1: 3.5rem;
+    --fs-h2: 3rem;
+    --fs-h3: 2.5rem;
+    --fs-h4: 2rem;
+    --fs-h5: 1.5rem;
+    --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -23,13 +29,17 @@ body{
     font-family: var(--ff-body);
 }
 /*Logo*/
+.logo{
+    position: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
 .btn{
     display: inline-block;
-    
-    margin-right: 50em;
-    
+    float: right;   
     padding: .2em 3em;
-    background: var(--clr-hireBtn);
+    margin-right: .5em;
+    background: var(--clr-additional);
     color: var(--clr-light);
     text-decoration: none;
     cursor: pointer;
@@ -45,16 +55,27 @@ body{
 }
 /*Navigation*/
 .nav{
-    text-align: right;
+    text-align: center;
     padding-top: 2em;
-    
 }
 .nav_item{
     display: inline;
-    align-items: left;
+    align-items: center;
 }
 .nav_link{
     padding: 1em;
+    color: var(--clr-extra);
+    text-decoration: none;
+}
+
+.nav_link:hover{
+    color: var(--clr-accent);
+}
+
+@media (min-width: 800px) {
+    .nav_link{
+        padding: 2em;
+    }
 }
 /*Home Page*/
 .intro{
@@ -71,7 +92,6 @@ body{
 }
 
 @media (min-width: 800px) {
-    
     .intro {
         display: grid;
         width: min-content;
@@ -89,34 +109,52 @@ body{
         position: relative;
         z-index: 2;
     }
-    
-    
 }
 .section_home_title, .section_home_title_intro
-.section_home_subtitle, .section_home_subtitle_intro
-{
+.section_home_subtitle, .section_home_subtitle_intro{
     font-family: var(--ff-title);
-    
     letter-spacing: 0.2em;
     text-align: center;
-    
+}
+
+.section_home_title, .section_home_title_intro{
+    color:var(--clr-additional);
+}
+
+.section_home_subtitle, .section_home_subtitle_intro{
+    color: var(--clr-extra);
 }
 /*Home Page - Service*/
+.section_summary_title{
+    text-align: center;
+    font-size: var(--fs-h3);
+}
+
 .home_page_services{
     margin-bottom: 2em;
 }
 
 .home_page_service{
-    max-width: 500px;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-}
+    
+    text-align:center;
+    display:block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-bottom: 1px;
+    align-content: center;
+    
+  }
 
+.home_page_service_design, .home_page_service_CMS, .home_page_service_eCommerce{
+    color: var(--clr-extra);
+    font-family: var(--ff-title);
+    font-size: var(--fs-h5);
+    letter-spacing: 0.1em;
+}
 @media (min-width: 1000px){
     .home_page_services{
         display: flex;
-        max-width: 1000px;
+        max-width: 1500px;
         margin: 0 auto;
         margin-right: auto;
         margin-left: auto;
@@ -125,5 +163,4 @@ body{
     .home_page_service + .home_page_service{
         margin-left: 5em;
     }
-
 }
