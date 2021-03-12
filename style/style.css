@@ -14,7 +14,7 @@
     --clr-extra: #058465;
     --clr-additional: #002874;
 
-    --fs-h1: 3.5rem;
+    --fs-h1: 4rem;
     --fs-h2: 3rem;
     --fs-h3: 2.5rem;
     --fs-h4: 2rem;
@@ -180,18 +180,49 @@ body{
 /*Service Page*/
 .service_title{
     text-align: center;
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
     font-family: var(--ff-title);
 }
 /*Service Page - Website Service*/
+.service_subtitle_website{
+    color: var(--clr-dark);
+    font-size: var(--fs-h4);
+}
 .service_website{
     text-align:center;
     max-width: 800px;
     font-family: var(--ff-extra);
-    padding: 1.5em;
+    padding-bottom: 0.5em;
 }
 .service_design, .service_CMS{
     color:var(--clr-extra);
+}
+/*Service Page - Logo Design Service*/
+.service_logo_design{
+    text-align: center;
+    max-width: 800px;
+    font-family: var(--ff-extra);
+    padding-bottom: 2em;
+}
+.service_subtitle_logo {
+    color: var(--clr-extra);
+    font-size: var(--fs-h4);
+
+}
+.service_logo_redesign{
+    color: var(--clr-extra);
+}
+
+@media (min-width: 1000px){
+    .service_title{
+        font-size: var(--fs-h1);
+    }
+    .service_subtitle_website{
+        font-size: var(--fs-h2);
+    }
+    .service_subtitle_logo{
+        font-size: var(--fs-h2);
+    }
 }
 
 /*Footer*/
@@ -202,13 +233,14 @@ body{
     padding: 2em 3em;
     
 }
-
 .footer a{
     text-decoration: none;
     color: var(--clr-accent);
-    font-size: var(--fs-h4);
 }
-
+.footer_link{
+    
+    font-size: var(--fs-h5);
+}
 .footer_link:hover, .quote_footer:hover{
     color: var(--clr-extra);
     text-decoration: underline;
