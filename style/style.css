@@ -228,8 +228,28 @@ body{
 /*About Me*/
 .section_about_title{
     font-family: var(--ff-title);
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h1);
     text-align: center;
+}
+.section_about_skills_title{
+    font-size: var(--fs-h2);
+}
+.section_about_skills_subtitle,.section_about_me_subtitle{
+    font-size: var(--fs-h3);
+}
+.section_about_skills_software, .section_about_skills_languages,.section_about_skills_CMS{
+    font-size: var(--fs-h4);
+}
+.section_about_skills_title,
+.section_about_skills_subtitle,
+.section_about_skills_software, 
+.section_about_skills_languages,
+.section_about_skills_CMS{
+    font-family: var(--ff-extra);
+}
+.section_about_me_subtitle{
+    color: var(--clr-additional);
+    font-family: var(--ff-extra);
 }
 .section_about_intro{
     max-width: 1000px;
@@ -266,7 +286,13 @@ body{
     }
     
 }
-
+.section_about_me_grid_container{
+    display: grid;
+    
+}
+.section_about_me_grid_item{
+    display: inline-grid;
+}
 /*Footer*/
 .footer{
     background-color: var(--clr-dark);
