@@ -280,12 +280,6 @@ body{
     padding-left: 1em;
 }
 
-@media (min-width: 1000px){
-    .section_about_title{
-        font-size: var(--fs-h1);
-    }
-    
-}
 
 .section_about_me_info{
     text-align: center;
@@ -294,7 +288,32 @@ body{
     margin-right: auto;
 }
 
+.section_about_me_development{
+    max-width: 1000px;
+    
+}
 
+.section_about_me_development_img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section_about_me_development_info{
+    padding: 2em;
+}
+
+@media (max-width: 700px){
+    .section_about_me_development_img{
+        width: 400px;
+    }
+    
+}
+/*My Work Section*/
+.section_work_title{
+    font-family: var(--ff-title);
+    text-align: center;
+    font-size: var(--fs-h1);
+}
 
 /*Footer*/
 .footer{
