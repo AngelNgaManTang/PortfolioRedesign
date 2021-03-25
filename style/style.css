@@ -68,15 +68,20 @@ body{
     padding: 1em;
     color: var(--clr-extra);
     text-decoration: none;
+    font-size: var(--fs-h5);
 }
 
 .nav_link:hover{
     color: var(--clr-accent);
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .nav_link{
-        padding: 2em;
+        font-size: var(--fs-h5);
+    }
+    .nav_item{
+        display: block;
+        padding-top: 1em;
     }
 }
 /*Home Page*/
