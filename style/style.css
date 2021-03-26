@@ -35,6 +35,17 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.header_slogan{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 800px) {
+    .header_slogan{
+        width: 75%;
+    }
+}
 .btn{
     display: inline-block;
     font-family: var(--ff-title);
@@ -75,7 +86,7 @@ body{
     color: var(--clr-accent);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .nav_link{
         font-size: var(--fs-h5);
     }
@@ -173,13 +184,18 @@ body{
 /* Home Page - Process*/
 .process{
     text-align: center;
-    max-width: 800px;
+    padding:3em;
+    background-image: url(../img/codingBackground.png)
 }
 .process_step_title{
     margin-top: 2em;
 }
 .process_step_one, .process_step_three{
     color: var(--clr-additional);
+}
+.process_step_one,.process_step_two,.process_step_three{
+    max-width: 800px;
+    
 }
 
 /*Service Page*/
