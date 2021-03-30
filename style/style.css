@@ -19,6 +19,7 @@
     --fs-h3: 2.5rem;
     --fs-h4: 2rem;
     --fs-h5: 1.5rem;
+    --fs-h6:1.25em;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -86,9 +87,18 @@ body{
     color: var(--clr-accent);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
     .nav_link{
-        font-size: var(--fs-h5);
+        font-size: var(--fs-h6);
+    }
+    .nav_item{
+        display: inline;
+        padding-top: 1em;
+    }
+}
+@media (max-width: 750px) {
+    .nav_link{
+        font-size: var(--fs-h6);
     }
     .nav_item{
         display: block;
@@ -336,6 +346,148 @@ body{
     font-size: var(--fs-h1);
 }
 
+ /* Slideshow container */
+ .slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;} 
+
+/*Contact Me Section*/
+.about_title{
+    text-align: center;
+    margin-top: 2em;
+}
+.about_info{
+    text-align: center;
+    max-width: 800px;
+}
+.number_contact, .email_contact{
+    text-align: center;
+    font-size: var(--fs-h5);
+    font-family: var(--ff-extra);
+    color: var(--clr-additional);   
+}
+.number_contact a, .email_contact a{
+    text-decoration: none;
+    color: var(--clr-additional);
+}
+.number_contact_link:hover, .email_contact_link:hover{
+    color: var(--clr-accent);
+}
+
+.social_contact_list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+    font-size: var(--fs-h3);
+}
+
+.social_contact_list_item {
+    margin: 0 .5em;
+    
+}
+.social_contact_list_item:hover{
+    transform: scale(1.5);
+    color: var(--clr-accent);
+}
+.social_contact_list_link {
+    padding: .5em;
+    color: var(--clr-additional);
+}
+
+.social_contact_list_link:hover {
+    color: var(--clr-accent);
+}
+.btn_contact{
+    text-align: center;
+    font-family: var(--ff-body);
+    margin-left: auto;
+    margin-right: auto;   
+    padding: .5em 2em;
+    
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+.btn_contact_link{
+    text-decoration: none;
+    color: var(--clr-extra);
+}
+.btn_contact_link:hover {
+    color: var(--clr-dark);
+    
+}
 /*Footer*/
 .footer{
     background-color: var(--clr-dark);
